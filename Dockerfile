@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy source code
 COPY src/HelloWorld.java .
 
+EXPOSE 8080
+
 # Compile the Java code
 RUN javac HelloWorld.java
 
