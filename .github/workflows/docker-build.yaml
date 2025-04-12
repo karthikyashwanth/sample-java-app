@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: yeswanth/java-repo:latest
+          tags: yeswanthk/java-repo:latest
