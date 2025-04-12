@@ -17,6 +17,10 @@ WORKDIR /app
 # Copy only the compiled .class file, not source or javac
 COPY --from=builder /build/HelloWorld.class .
 
+
+# Expose port 8080 (for web apps)
+EXPOSE 8080
+
 # Run the compiled Java app
 CMD ["java", "HelloWorld"]
 
